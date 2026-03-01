@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>te amo mi amo</title>
+</head>
+<body>
+
+  <h2>Proyecto que hice aprendiendo Python</h2>
+
+  <p>dime una cosa que te gusta mucho</p>
+  <input type="text" id="cosa1">
+
+  <p>dime otra cosa que tambien te guste mucho</p>
+  <input type="text" id="cosa2">
+
+  <br><br>
+  <button onclick="mostrar()">Enviar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function mostrar() {
+      const cosa1 = document.getElementById("cosa1").value;
+      const cosa2 = document.getElementById("cosa2").value;
+
+      document.getElementById("resultado").innerHTML =
+        "Wow, a mi tambien me gusta mucho " + cosa1 + " y " + cosa2;
+    }
+  </script>
+
+</body>
+</html>
